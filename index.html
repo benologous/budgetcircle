@@ -1,9 +1,38 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fambudge</title>
-<style>body{font:17px/1.6 -apple-system,system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;color:#1d2928;background:#f6f0e6}h1{color:#0e6b63}a{color:#0e6b63}</style></head>
+<title>Fambudge: Family Budget</title>
+<meta name="description" content="Know what's safe to spend. A calm household budget for your iPhone: log spending by person, set limits, save toward goals. No bank login, no account.">
+<style>
+:root{--teal:#0e6b63;--ink:#1d2928;--sand:#f6f0e6;--card:#fffdf8}
+*{box-sizing:border-box}body{margin:0;font:17px/1.6 -apple-system,system-ui,sans-serif;color:var(--ink);background:var(--sand)}
+a{color:var(--teal)}header{background:var(--teal);color:#fff;text-align:center;padding:56px 20px 40px}
+header h1{margin:0 0 8px;font-size:2.4rem}header p{margin:0 auto;max-width:560px;font-size:1.15rem;opacity:.95}
+main{max-width:980px;margin:0 auto;padding:32px 20px 48px}
+.gallery{display:flex;gap:18px;overflow-x:auto;padding:8px 4px 20px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.gallery img{height:520px;width:auto;border-radius:22px;box-shadow:0 8px 24px rgba(0,0,0,.18);scroll-snap-align:center;flex:0 0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:28px 0}
+.card{background:var(--card);border-radius:18px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.08)}.card h3{margin:0 0 6px;color:var(--teal);font-size:1.05rem}.card p{margin:0}
+.note{background:var(--card);border-left:4px solid var(--teal);padding:14px 18px;border-radius:8px}
+footer{text-align:center;padding:0 20px 40px}
+@media(max-width:600px){.gallery img{height:420px}header h1{font-size:2rem}}
+</style></head>
 <body>
-<h1>Fambudge</h1>
-<p>A simple way for your household to track spending, set budgets and save toward goals together. You type in your own numbers, and Fambudge never connects to your bank.</p>
-<p><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></p>
+<header><h1>Fambudge</h1><p>Know what's safe to spend. One calm place for your household's money on your iPhone.</p></header>
+<main>
+<div class="gallery" aria-label="App screenshots">
+<img src="shot-01-today.jpg" alt="Today screen showing what is left this month and a safe-to-spend amount per day" loading="lazy">
+<img src="shot-02-circle.jpg" alt="Circle screen showing each person's spending" loading="lazy">
+<img src="shot-03-budgets.jpg" alt="Budgets screen with a monthly limit ring for each category" loading="lazy">
+<img src="shot-04-circle-goals.jpg" alt="Savings goals filling up as you save" loading="lazy">
+<img src="shot-05-history.jpg" alt="Six months of income and spending" loading="lazy">
+</div>
+<div class="grid">
+<div class="card"><h3>Safe to spend, every day</h3><p>See what is left this month and what you can spend each day without running short.</p></div>
+<div class="card"><h3>Everyone in one place</h3><p>Tag spending to each person in your household and see who spends what.</p></div>
+<div class="card"><h3>Limits that warn you early</h3><p>Set a monthly limit for any category and get an optional nudge before it runs out.</p></div>
+<div class="card"><h3>Goals you can watch fill</h3><p>Save toward a holiday, an emergency fund or school fees together.</p></div>
+</div>
+<p class="note"><strong>Private by design.</strong> No bank login and no account. Your budgets, entries and goals stay on your iPhone and do not sync between devices. Delete everything in one tap from the app. Fambudge is a tracking tool and does not give financial, tax or legal advice.</p>
+</main>
+<footer><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></footer>
 </body></html>
